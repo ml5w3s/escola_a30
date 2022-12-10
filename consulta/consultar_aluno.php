@@ -25,5 +25,5 @@ try{
 	echo 'Erro '. $ex->getMessage();
 }
 ?>
-</table><br><a href='http://localhost/00_marcelo/projeto_locadora'>Voltar</a>
+</table><br><a href='http://localhost/locadora_a30'>Voltar</a>
 </fieldset></div></div></body></html>

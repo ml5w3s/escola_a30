@@ -9,16 +9,19 @@
 </head>
 <body>
 <div id="flex-container">
+<article class="menu">
+<?php
+	include("../modulo/menu.php");
+?>
+</article>
 <article class="boxinterno">
 <h3>Cadastro de bairro</h3>
     <form method="post" action="../controle/inserir_bairro.php">
     <fieldset><br>        
         <label>Digite o bairro</label>
         <input type="text" name="txt_bairro"><br>
-        <input type="submit" value="Cadastrar" class="botoes"><br><br>
+        <nav class="botoes"><input type="submit" value="Cadastrar"></nav><br>
     </fieldset>
     </form>
 </article>
-</div>
-</body>
-</html>
+</div></body></html>

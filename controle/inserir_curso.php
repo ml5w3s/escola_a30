@@ -12,14 +12,14 @@ $conn = conectar();
 try{
 	$curso = $_POST["txt_curso"];
 	if(isset($curso)){
-	$stm = $conn->prepare("INSERT INTO curso(nome_curso) VALUES (?)");
-	$stm->bindValue(1,$curso,PDO::PARAM_STR);
-	$stm->execute();
+	$stmt = $conn->prepare("INSERT INTO curso(nome_curso) VALUES (?)");
+	$stmt->bindValue(1,$curso,PDO::PARAM_STR);
+	$stmt->execute();
 	}
 	echo'
     <script>
-        alert("Registro salvo com sucesso!");
-        window.location.href = "../index.html";
+        alert("Selecione as disciplinas!");
+        window.location.href = "../consulta/pesquisar_disciplina.php";
     </script>
     ';
 }catch(PDOException $ex_){

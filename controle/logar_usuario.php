@@ -16,15 +16,16 @@ $senha = $row[senha];
 if($usuario == $user and $pass==md5($senha)) {		
 	$_SESSION['usuario'] = $user;
 	$_SESSION['senha'] = $pass;
-	echo'
-    <script>
+	echo'<script>
         alert("Acesso Liberado!");
         window.location.href = "../index.html";
-    </script>
-    ';
+    </script>';
 } else {
 	unset ($_session['$user'];
 	unset ($_session['$pass'];	
-	echo "Usuario ou senha incorretos, <a href='../formulario/form_login.php'>tente novamente</a>";
+	echo '<script>
+        alert("Usuario ou senha incorretos!");
+        window.location.href = "../formulario/login.php";
+    </script>';
 }
 ?>

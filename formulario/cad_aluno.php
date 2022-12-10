@@ -15,7 +15,7 @@
     <tr><td><label>Aluno</label></td><td><input type="text" name="txt_aluno" required></td></tr>
     <tr><td><label>Bairro</label></td>
         <td><?php	  
-	include_once("../modulo/mod_select_bairro.php");
+	require_once("../modulo/mod_select_bairro.php");
 	}
 	print "</select></td>";
     echo "<td>Turma";

@@ -12,16 +12,17 @@ $conn = conectar();
 try{
 $bairro = $_POST["txt_bairro"];
 	if(isset($bairro)){
-		$stm = $conn->prepare("INSERT INTO bairro(nome_bairro) VALUES (?)");
-		$stm->bindValue(1,$bairro,PDO::PARAM_STR);
-		$stm->execute();
+		$sql = "INSERT INTO bairro(nome_bairro) VALUES (?)";
+		$stmt = $conn->prepare($sql);
+		$stmt->bindValue(1,$bairro,PDO::PARAM_STR);
+		$stmt->execute();
 	}
 	echo'<script>
 			alert("Registro salvo com sucesso!");
 			window.location.href = "../index.html";
     	</script>';
 }catch(PDOException $ex_){
-	echo 'Erro '. $ex->getMessage();
+	echo 'Erro '. $ex_->getMessage();
 }
 ?>
 </head>

@@ -10,13 +10,13 @@
 <body>
 <h3>Cadastro de professor</h3>
 <form method="post" action="../controle/inserir_professor.php">
-<fieldset>		
-<table>
-    <tr><td><label>Professor</label></td><td><input type="text" name="txt_professor" required></td></tr>
-    <tr><td><label>Bairro</label></td>
-        <td><?php
-	include_once("../modulo/mod_select_bairro.php");
-	?></td></tr>    
-    <tr><td colspan="2" align="right"><input type="submit" value="Cadastrar"></td></tr>
-</table></fieldset></form></body></html>
+<div id="flex-container">
+<article class="boxinterno">
+<fieldset><br>
+<label>Professor:</label>
+<input type="text" name="txt_professor" required><br>
+<label>Bairro: </label>
+<?php require_once("../modulo/select_bairro.php");?>
+<nav class="botoes"><input type="submit" value="Cadastrar"><nav><br>
+</fieldset></form></article></div></body></html>
 

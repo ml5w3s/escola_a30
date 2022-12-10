@@ -6,15 +6,9 @@
 	<title>Projeto PHP</title>
 	<link rel="stylesheet" type="text/css" href="estilo/geral.css">
 </head>
-<body id="backhome">
-<header>
-<table><tr><th class="titulo" width="50%"><h2>SISTEMA DE CONTROLE ESCOLA A30</h2></th>
-		<th width="1%"><a href="/escola_a30/formulario/cad_usuario.php">Cadastro</a></th>
-		<th width="1%"><a href="/escola_a30/formulario/login.php">Login</a></th></tr>
-</table>
-</header>
-<div id="flex-container">
-<article class="box">
+<body>
+
+<article class="menu">
 	<h3>Cadastros</h3>
 	<nav><a href="/escola_a30/formulario/cad_bairro.php">Bairro</a> |
 	<a href="/escola_a30/formulario/cad_curso.php">Curso</a> |
@@ -23,8 +17,7 @@
 	<nav><a href="/escola_a30/formulario/cad_aluno.php">Aluno</a> |
 	<a href="/escola_a30/formulario/cad_turma.php">Turma</a> |
 	<a href="/escola_a30/formulario/cad_disciplina.php">Disciplina</a></nav>
-</article>
-<article class="box">
+
 	<h3>consulta</h3>
 	<nav><a href="/escola_a30/consulta/consultar_bairro.php">Bairro</a> |
 	<a href="/escola_a30/consulta/consultar_cursos_valor.php">Curso</a> |
@@ -33,8 +26,7 @@
 	<nav><a href="/escola_a30/consulta/consultar_aluno.php">Aluno</a> |
 	<a href="/escola_a30/consulta/con_turma.php">Turma</a> |
 	<a href="/escola_a30/consulta/form_finalizar_disciplina.php">Recibos</a></nav>
-</article>
-<article class="box">
+
 	<h3>Atualizações</h3>
 	<nav><a href="/escola_a30/formulario/up_bairro.php">Bairro</a> |
 	<a href="/escola_a30/formulario/up_curso.php">Curso</a> |
@@ -43,8 +35,7 @@
 	<nav><a href="/escola_a30/formulario/up_aluno.php">Aluno</a> |
 	<a href="/escola_a30/formulario/up_turma.php">Turma</a> |
 	<a href="/escola_a30/formulario/up_disciplina.php">Disciplina</a></nav>
-</article>
-<article class="box">
+
 	<h3>Exclusão</h3>
 	<nav><a href="/escola_a30/formulario/del_bairro.php">Bairro</a> |
 	<a href="/escola_a30/formulario/del_curso.php">curso</a> |
@@ -53,11 +44,5 @@
 	<nav><a href="/escola_a30/formulario/del_aluno.php">Aluno</a> |
 	<a href="/escola_a30/formulario/del_turma.php">Turma</a> |
 	<a href="/escola_a30/formulario/del_disciplina.php">Disciplina</a></nav>
-</article>
-</div>
-<br>
-<article id="imagem">
-	<img src="/escola_a30/assets/indice.png" width="90%">
-</article>
-</body>
-</html>
+</article>"
+</body></html>

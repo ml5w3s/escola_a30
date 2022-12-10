@@ -10,16 +10,7 @@
     <h2>Exclusão de disciplina</h2>
     <form method="post" action="../controle/excluir_disciplina.php">
     <fieldset>
-    <?php	  
-	include ("../controle/conexao.php");
-    $conn = conectar();
-	$sql = 'SELECT * FROM disciplina';
-	print "<select name='cbx_disciplina'>";
-	foreach ($conn->query($sql) as $row) {
-	  print "<option value='".$row['cod_disciplina']."'>".$row['nome_disciplina']."</option>";
-	}
-	print "</select>";
-	?>
+<?php require_once("../modulo/select_disciplina.php");?>
     <input type="submit" value="Excluir">
 </fieldset>
     </form>

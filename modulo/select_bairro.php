@@ -7,4 +7,5 @@
 	  print "<option value='".$row['cod_bairro']."'>".$row['nome_bairro']."</option>";
 	}
 	print "</select>";
+	$conn = null;
 ?>

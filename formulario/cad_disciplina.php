@@ -15,7 +15,7 @@
     <fieldset><br>        
         <label>Digite o disciplina</label>
         <input type="text" name="txt_disciplina"><br>
-        <input type="submit" value="Cadastrar" class="botoes"><br><br>
+        <nav class="botoes"><input type="submit" value="Cadastrar" class="botoes"></nav><br>
     </fieldset>
     </form>
 </article>

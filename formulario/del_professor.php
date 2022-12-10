@@ -10,16 +10,7 @@
     <h2>Exclusão de professor</h2>
     <form method="post" action="../controle/excluir_professor.php">
     <fieldset>
-    <?php	  
-	include ("../controle/conexao.php");
-    $conn = conectar();
-	$sql = 'SELECT * FROM professor';
-	print "<select name='cbx_professor'>";
-	foreach ($conn->query($sql) as $row) {
-	  print "<option value='".$row['cod_professor']."'>".$row['nome_professor']."</option>";
-	}
-	print "</select>";
-	?>
+<?php require_once("../modulo/select_professor.php");?>
     <input type="submit" value="Excluir">
 </fieldset>
     </form>

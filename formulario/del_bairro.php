@@ -11,14 +11,7 @@
     <form method="post" action="../controle/excluir_bairro.php">
     <fieldset>
     <?php	  
-	include ("../controle/conexao.php");
-    $conn = conectar();
-	$sql = 'SELECT * FROM bairro';
-	print "<select name='cbx_bairro'>";
-	foreach ($conn->query($sql) as $row) {
-	  print "<option value='".$row['cod_bairro']."'>".$row['nome_bairro']."</option>";
-	}
-	print "</select>";
+	require_once("../modulo/select_bairro.php");
 	?>
     <input type="submit" value="Excluir">
 </fieldset>

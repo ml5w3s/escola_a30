@@ -22,7 +22,7 @@ try{
     $sql="INSERT INTO curso_tem_disciplina(curso,disciplina) 
          VALUES ($curso,$disciplina)";
     $conn->query($sql);
-	echo "<a href='../consulta/consultar_disciplina.php'>Selecionar outra disciplina</a><br><br>
+	echo "<a href='../consulta/pesquisar_disciplina.php'>Selecionar outra disciplina</a><br><br>
 	 <a href='../consulta/concluir_formacao_curso.php'>Finalizar seleção</a>";
 }catch(PDOException $ex){
     echo 'Erro'.$ex->getMessage();

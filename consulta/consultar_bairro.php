@@ -5,7 +5,6 @@
 	<link rel='stylesheet' type='text/css' href='../estilos/geral.css'>
 </head>
 <body>
-<h1>Consulta de bairros</h1>
 <div class="flex-container">
 <div id="box">
 <fieldset>	
@@ -22,5 +21,5 @@ try{
 	echo 'Erro '. $ex->getMessage();
 }
 ?>
-</table><br><a href='http://localhost/00_marcelo/projeto_locadora'>Voltar</a>
+</table><br><a href='http://localhost/escola_a30'>Voltar</a>
 </fieldset></div></div></body></html>

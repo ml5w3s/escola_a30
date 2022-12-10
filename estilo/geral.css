@@ -6,9 +6,9 @@ body{
 	background-image: conic-gradient(#ffffff,#dddddd,#eeeeee); /* cor do fundo da página*/
 }
 h2{
-	margin-top:30px; /* margem do topo */
-	margin-left:30px; /* margem esquerda */
-	margin-bottom:20px; /* margem da base */
+	margin-top:10px; /* margem do topo */
+	margin-left:10px; /* margem esquerda */
+	margin-bottom:10px; /* margem da base */
 	font-family:"Arial Black", Gadget, sans-serif; /* tipo de fonte */
 	color:white; /* cor da fonte */
 	text-shadow:1px 1px black; /* sombra do texto - tamanho, deslocamento e cor */
@@ -64,11 +64,22 @@ a:hover{
 	border-radius:15px; /* arrendondamento de bordas do box */
 	box-shadow:2px 4px 8px black; /* sombra do box - tamanho, deslocamento, enevoamente e cor */
 }
+.menu{  /* div id - sempre idenficada pelo símbolo "#" */
+	margin-left: auto;
+	margin-right: auto;
+	width:17%; /*largura do bloco de conteúdo */
+	text-align: center;
+	height:0 auto; /* altura autmomática para preenchimento de conteúdo */
+	padding:20px 20px 20px 20px; /* margens internas do bloco - superior, direito, inferior e esquerdo 20px. */
+	background-color:white; /* cor do box */
+	border-radius:15px; /* arrendondamento de bordas do box */
+	box-shadow:2px 4px 8px black; /* sombra do box - tamanho, deslocamento, enevoamente e cor */
+}
 .boxinterno{  /* div id - sempre idenficada pelo símbolo "#" */
 	margin-left:30px; /* margem esquerda */
 	width:600px; /*largura do bloco de conteúdo */
 	height:0 auto; /* altura autmomática para preenchimento de conteúdo */
-	padding:20px 20px 20px 20px; /* margens internas do bloco - superior, direito, inferior e esquerdo 20px. */
+	padding:10px 10px 10px 10px; /* margens internas do bloco - superior, direito, inferior e esquerdo 20px. */
 	background-color:white; /* cor do box */
 	border-radius:15px; /* arrendondamento de bordas do box */
 	box-shadow:2px 4px 8px black; /* sombra do box - tamanho, deslocamento, enevoamente e cor */
