@@ -10,7 +10,11 @@
 include("conexao.php");
 $conn = conectar();
 $bairro = $_POST["txt_bairro"];
-$conn->query("INSERT INTO bairro(nome_bairro) VALUES ('$bairro')");
+$tab = "bairro";
+$sql = ("INSERT INTO $tab(nome_bairro) VALUES (?)");
+$query = $conn->prepare($sql);
+$query->bindParam(1,$bairro, PDO::PARAM_STR) ;
+$query->execute();
 header('Location: http://localhost/escola_a30');
 ?>
 </head>

@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+
+<HTML lang="pt-br">
+	
+<head>
+	<meta charset="UTF-8">
+	
+	<title>Formulário de Contato</title>
+
+<!----------------CSS----------------->	
+    
+<link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+	
+<div id="BoxForm">
+	<h1>Formulário de Contato</h1>
+	<form action="enviar.php" method="post" id="form">
+		<ul>                      
+			<li>
+				<label for="name">Nome</label>
+				<input type="text" name="name" id="name" />
+			</li>
+			<li>
+				<label for="email">E-mail</label>
+				<input type="text" name="email" id="email" />
+			</li>
+			<li>
+				<label for="subject">Assunto</label>
+				<input type="text" name="subject" id="subject" />
+			</li>
+			<li>
+				<label for="message">Mensagem</label>
+				<textarea name="message" id="message" rows="30" cols="30"></textarea>
+			</li>
+			<li>
+				<input type="submit" id="send_message" value="Enviar" />
+			</li>
+		</ul>
+	</form>
+</div>
+
+</body>
+</html>

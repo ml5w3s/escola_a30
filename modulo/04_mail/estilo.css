@@ -1,0 +1,80 @@
+
+h1 {
+	color:#000;
+	font-size:20px;
+	margin:0 0 20px 0;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+/* INICIO DO CSS DO FORMULARIO*/
+
+#BoxForm {
+	float:left;
+	margin-left:50px;
+	margin-top:50px;
+	padding:20px 0 30px 20px;
+	width:660px;
+	height:380px;
+	background:#fff;
+	border:1px solid #dcdcdc;
+	border-radius:10px;
+}
+
+#form ul li {
+	margin:20px 0;
+	list-style:none;
+	position:relative;
+	clear:both;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+}
+
+#form label {
+	margin:5px 0;
+	line-height:45px;
+	width:80px;
+	text-align:left;
+	float:left;
+	color:#666;
+}
+
+#form input#name, #form input#email, #form input#subject, #form textarea {
+	float:left;
+	padding:15px;
+	border:1px solid #CCCCCC;
+	background:#fcfcfc;
+	border-radius:5px;
+	color:#03F;
+}
+#form input#name, #form input#email, #form input#subject {
+	width:350px;
+}
+
+#form textarea {
+	width:400px;
+	height:80px;
+	resize:none;
+}
+
+#form input {
+	color:#999;
+	float:left;
+}
+
+#form input#send_message {
+	width:100px;
+	height:40px;
+	margin:20px 0 0 80px;
+	cursor:pointer;
+	font-size:13px;
+	color:#f6f6f6;
+	background:#999;
+	border:1px solid #ccc;
+	border-radius:5px;
+}
+
+#form input#send_message:hover {
+	color:#999;
+	background:#dcdcdc;
+	border-color:#999;
+}

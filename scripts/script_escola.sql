@@ -19,14 +19,6 @@ FOREIGN KEY (bairro) REFERENCES bairro(cod_bairro),
 PRIMARY KEY (id_usuario)	
 );
 
-CREATE TABLE turma(
-    num_turma INT AUTO_INCREMENT,
-    professor_turma VARCHAR(45),
-    curso_turma INT,
-    PRIMARY KEY(num_turma),
-    FOREIGN KEY(curso_turma) REFERENCES curso(cod_curso)    
-);
-
 CREATE TABLE professor(
     cod_professor INT AUTO_INCREMENT,
     nome_professor VARCHAR(45),
@@ -54,6 +46,14 @@ CREATE TABLE curso_tem_disciplina(
     FOREIGN KEY(disciplina) REFERENCES disciplina(cod_disciplina)    
 );
 
+CREATE TABLE turma(
+    num_turma INT AUTO_INCREMENT,
+    professor_turma VARCHAR(45),
+    curso_turma INT,
+    PRIMARY KEY(num_turma),
+    FOREIGN KEY(curso_turma) REFERENCES curso(cod_curso)    
+);
+
 CREATE TABLE aluno(
     matricula INT AUTO_INCREMENT,
     nome_aluno VARCHAR(90),
@@ -76,6 +76,6 @@ INSERT INTO usuario(usuario,email,bairro,senha) VALUES ("Bruce","bruce@ml5w3s",2
 
 ALTER TABLE professor ADD bairro INT;
 
-ALTER TABLE professor ADD FOREIGN KEY (bairro) REFERENCES bairro(cod_bairro);
+ALTER TABLE funcionario ADD FOREIGN KEY (bairro) REFERENCES bairro(cod_bairro);
 
-
+ALTER TABLE funcionario RENAME COLUMN mome nome;
